@@ -8,7 +8,33 @@
 </head>
 <body>
 
+<div id="logo">
+		<%= link_to root_path do %> 
+		<%= image_tag src="prueba.jpg" %>
+		<% end %>
+	</div>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="left" href="#home">Home</a></li>
+  <li><a class= "right" href="#news">News</a></li>
+  <li><a class= "right" href="#contact">Contact</a></li>
+  <li><a class= "right" href="#about">About</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
 <%= yield %>
 
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>

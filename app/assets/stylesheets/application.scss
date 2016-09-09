@@ -1,0 +1,178 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Slabo+27px';
+
+$blue: #499DF3;
+$grey: #505050;
+$light_grey: #9c9c9c;
+$dark_grey: #3c3c3c;
+$red: #e13b8d;
+
+body {
+background-color: #efefef;
+color: $grey;
+-webkit-font-smoothing: antialiased;
+	h1,h2,h3,h4,h5,h6 {
+		font-family: 'Slabo 27px', serif;
+	}
+	p, a {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+    line-height: 1.58;
+	}
+  a {
+    &:hover {
+    color: $blue;
+    background-color: transparent;
+  }
+  }
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.blue {
+	color: $blue;
+}
+
+.white {
+	color: white;
+}
+.up {
+	text-transform: uppercase;
+}
+
+button {
+	transition: background-color .25s linear;
+  font-size: 14px;
+  min-width: 160px;
+  border-radius: 20px;
+  padding: 11px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: transparent;
+}
+
+.button_blue {
+	color: $blue;
+	border: solid 2.5px $blue;
+	&:hover {
+    color: white;
+    background-color: $blue;
+  }
+}
+
+.button_grey {
+	color: $grey;
+	border: solid 2.5px $grey;
+	&:hover {
+    color: white;
+    background-color: $grey;
+  }
+}
+
+hr {
+  border-width: 1.8px;
+  max-width: 200px;
+}
+hr.light {
+  border-color: white;
+}
+
+hr.lefty {
+  border-color: $grey;
+   border-width: 1.8px;
+  max-width: 100px;
+  margin-left: -.7rem;
+}
+
+hr.blue {
+  border-color: $blue;
+}
+
+#logo {
+	text-align: center;
+	img {
+		width: 150px;
+	}
+}
+
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}

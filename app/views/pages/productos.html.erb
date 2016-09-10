@@ -127,15 +127,37 @@ Días Anaquel: 20</p>
 <script>
 
 function initMap() {
-  var myLatLng = {lat: -25.363, lng: 131.044};
+  var myLatLng = {lat: 23.3849683, lng: -101.4149135};
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
+    zoom: 5,
     center: myLatLng
   });
 
+
   var marker = new google.maps.Marker({
-    position: myLatLng,
+    position: {lat: 24.8815479, lng: -107.8853082},
+    map: map,
+    title: 'Hello World!'
+  });
+
+    var marker = new google.maps.Marker({
+    position: {lat: 18.9695057, lng: -101.5439392},
+    map: map,
+    title: 'Hello World!'
+  });
+    var marker = new google.maps.Marker({
+    position: {lat: 20.7817596, lng: -101.3379088},
+    map: map,
+    title: 'Hello World!'
+  });
+    var marker = new google.maps.Marker({
+    position: {lat: 18.4277159, lng: -98.1216899},
+    map: map,
+    title: 'Hello World!'
+  });
+    var marker = new google.maps.Marker({
+    position: {lat: 20.1926719, lng: -98.6870044},
     map: map,
     title: 'Hello World!'
   });

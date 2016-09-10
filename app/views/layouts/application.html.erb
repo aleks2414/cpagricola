@@ -13,9 +13,12 @@
 
 <div id="menu">
 <ul class="topnav" id="myTopnav">
-	<li><a href="#"></a></li>
-	<li class="o"><%=link_to "home", root_path %></li> /
-  <li class="o"><%=link_to "Productos", productos_path %></li> /
+  <li class="no_more">
+    <%= link_to root_path do %> 
+    <%= image_tag src="logo.png" %>
+    <% end %>
+  </li>
+  <li class="o"><%=link_to "Productos", productos_path %></li>
   <li class="o"><%=link_to "Operación", operacion_path %></li>
   <li class="o"><a href="#about">Contacto</a></li>
   <li class="icon">

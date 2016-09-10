@@ -1,0 +1,46 @@
+<div id="cover" class="cover_contact">
+	<h1>Contáctanos Ahora </h1>
+</div>
+
+<div class="container">
+<div class="row">
+<div id="titulos">
+	<p>Si tienes alguna duda o comentario en particular no dudes en escribirnos. <br>Uno de nuestros consultores se comunicará contigo en las próximas 48 horas
+</p>
+</div>
+</div>
+</div>
+
+
+	<div class="container">
+	<div class="col-md-6 col-md-offset-3" id="form">
+	<%= form_for @contact do |f| %>
+		<%= f.label :nombre %><br>
+		<%= f.text_field :name, required: true %>
+
+		<br>
+
+
+		<%= f.label :email %><br>
+		<%= f.email_field :email, required: true %> <br>	
+
+			<%= f.label :Teléfono %><br>
+		<%= f.number_field :telephone, required: true %>
+
+		<br>
+
+		<%= f.label :mensaje %><br>
+		<%= f.text_area :comments, as: :text, class:"contacto_area" %>
+
+		<div class="hidden">
+			<%= f.label :nickname %><br>
+			<%= f.text_field :nickname, hint: 'Esto se queda en blanco' %>
+		</div>
+
+<br>
+<br>
+		<%= f.submit 'Enviar mensaje', class: "button button_blue block" %>
+	<% end %>
+	</div>
+	</div>
+	<br><br>

@@ -14,9 +14,9 @@
 <div id="menu">
 <ul class="topnav" id="myTopnav">
 	<li><a href="#"></a></li>
-  <li class="o"><a href="#home">Home</a></li> /
-  <li class="o"><a href="#news">Productos</a></li> /
-  <li class="o"><a href="#contact">Operaciones</a></li> /
+	<li class="o"><%=link_to "home", root_path %></li> /
+  <li class="o"><%=link_to "Productos", productos_path %></li> /
+  <li class="o"><%=link_to "Operación", operacion_path %></li>
   <li class="o"><a href="#about">Contacto</a></li>
   <li class="icon">
     <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
@@ -30,7 +30,7 @@
 <div class="container">
 	<ul>
 		<li><a href="#">Productos</a></li>
-		<li><a href="#">Operaciones</a></li>
+		<li><a href="#">Operación</a></li>
 		<li><a href="#">Contacto</a></li>
 		<li>
 			<a href=""><span class="fa fa-twitter twitter" aria-hidden="true"></span></a>

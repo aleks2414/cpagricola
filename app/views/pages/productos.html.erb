@@ -1,0 +1,146 @@
+<div id="cover" class="<%=params[:action]%>">
+<h1><strong>Productos</strong></h1>
+</div>
+
+<div id="titulos">
+	<p>Contamos con una selecta variedad de productos del campo con certificaciones que cumplen con las más estrictas normas internacionales.</p>
+</div>
+
+<div id="servicios2">
+	<ul>
+	<div class="row">
+		<li class="col-sm-3">
+			<div class="tomato">
+				<h3>Tomate bola <br> 5x5/ 5x6</h3>
+				<hr class="light">
+				<p>25 lb x caja <br>
+					90 cajas x pallet <br>
+					20 pallets x embarque <br>
+					Temp. de manejo: 7-10 °C <br>
+					Días Anaquel: 25
+</p>
+				<br>
+			</div>
+		</li>
+		<li class="col-sm-3">
+			<div class="morada">
+				<h3>Cebolla Morada <br> Granel</h3>
+				<hr class="light">
+				<p>80 lb x arpilla <br>
+25 arpillas x pallet <br>
+20 pallets x embarque <br>
+Temp. de manejo: 7-10 °C <br>
+Días Anaquel: 25
+</p>
+				<br>
+			</div>
+		</li>
+		<li class="col-sm-3">
+			<div class="pimiento">
+				<h3>Pimiento Morrón <br> Verde</h3>
+				<hr class="light">
+				<p>24 lb x caja <br>
+35 cajas x pallet <br>
+20 pallets x embarque <br>
+Temp. de manejo: 7-10 °C <br>
+Días Anaquel: 20
+</p>
+				<br>
+			</div>
+		</li>
+		<li class="col-sm-3">
+			<div class="ajo">
+				<h3>Ajo fresco <br> en Malla</h3>
+				<hr class="light">
+				<p>35.3 lb x caja <br>
+48 cajas x pallet <br>
+20 pallets x embarque <br>
+Temp. de manejo: 1-7 °C <br>
+Días Anaquel: 40
+</p>
+				<br>
+			</div>
+		</li>
+		</div>
+<div class="row">
+		<li class="col-sm-3">
+			<div class="roma">
+				<h3>Tomate Roma <br> S-M</h3>
+				<hr class="light">
+				<p>25 lb x caja <br>
+90 cajas x pallet <br>
+20 pallets x embarque <br>
+Temp. de manejo: 7-10 °C <br>
+Días Anaquel: 25
+</p>
+				<br>
+			</div>
+		</li>
+		<li class="col-sm-3">
+			<div class="blanca">
+				<h3>Cebolla Blanca <br> Granel</h3>
+				<hr class="light">
+				<p>80 lb x arpilla <br>
+25 arpillas x pallet <br>
+20 pallets x embarque <br>
+Temp. de manejo: 7-10 °C <br>
+Días Anaquel: 25
+</p>
+				<br>
+			</div>
+		</li>
+		<li class="col-sm-3">
+			<div class="apio">
+				<h3>Apio fresco <br> en bolsa</h3>
+				<hr class="light">
+				<p>48 lb x caja <br>
+40 cajas x pallet <br>
+20 pallets x embarque <br>
+Temp. de manejo: 1-7 °C <br>
+Días Anaquel: 20
+</p>
+				<br>
+			</div>
+		</li>
+		<li class="col-sm-3">
+			<div class="lechugas">
+				<h3>Lechuga</h3><br>
+				<hr class="light">
+				<p>48 lb x caja <br>
+40 cajas x pallet <br>
+20 pallets x embarque <br>
+Temp. de manejo: 1-7 °C <br>
+Días Anaquel: 20</p>
+				<br>
+			</div>
+		</li>
+		</div>
+	</ul>
+</div>
+
+<div id="titulos">
+	<p>Estas es la ubicación geográfica de donde obtenemos el producto de nuestros amigos productores:</p>
+</div>
+
+<div id="map"></div>
+
+<script>
+
+function initMap() {
+  var myLatLng = {lat: -25.363, lng: 131.044};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-mf8tDK-CCJkijNNBVpbMVt3puJRkaQ0&signed_in=true&callback=initMap"></script>

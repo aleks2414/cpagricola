@@ -239,7 +239,17 @@ ul.topnav li.icon {display: none;}
   height: 85vh;
 }
 
-#cover.index {
+.productos {
+	background-image: image-url("productos.jpg");
+  height: 85vh;
+}
+
+.operacion {
+	background-image: image-url("operacion.jpg");
+  height: 85vh;
+}
+
+#cover.index, #cover.productos, #cover.operacion {
 	padding: 8rem 4rem;
 	h1 {
 	text-align: left;
@@ -283,6 +293,32 @@ ul.topnav li.icon {display: none;}
 			p {
 				font-size: 1.1em;
 				color: #d8d8d8;
+			}
+		}
+	}
+}
+
+#servicios2 {
+	margin-bottom: 3rem;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline;
+			cursor: pointer;
+			margin-bottom: 2rem;
+			&:hover p {
+				opacity: 1;
+			}
+			h3 {
+				color: white;
+				text-transform: uppercase;
+			}
+			p {
+				font-size: 1.1em;
+				color: white;
+				opacity: 0.01;
 			}
 		}
 	}
@@ -336,4 +372,79 @@ ul.topnav li.icon {display: none;}
 
 .float_right {
 	float: right;
+}
+
+
+.tomato {
+	background-image: image-url("tomato.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+
+.morada {
+	background-image: image-url("morada.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+.pimiento {
+	background-image: image-url("pimiento.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+.ajo {
+	background-image: image-url("ajo.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+.roma {
+	background-image: image-url("roma.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+.blanca {
+	background-image: image-url("blanca.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+
+.apio {
+	background-image: image-url("apio.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+
+.lechugas {
+	background-image: image-url("lechugas.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+
+#map {
+ 	margin-top: 5rem;
+  width: 100%;
+  height: 200px;
 }

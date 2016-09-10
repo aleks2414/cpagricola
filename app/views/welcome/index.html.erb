@@ -21,7 +21,7 @@
 				<hr class="light">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem mollitia magnam atque reprehenderit inventore, ad impedit facere beatae illum eius et, eveniet! Accusantium numquam repudiandae ratione quia consequuntur optio soluta.</p>
 				<br>
-				<button class="button_white">Más información</button>
+				<%= link_to "Más información", productos_path, class: "button button_white" %>
 			</div>
 		</li>
 		<li class="col-sm-6">
@@ -30,7 +30,7 @@
 				<hr class="light">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem mollitia magnam atque reprehenderit inventore, ad impedit facere beatae illum eius et, eveniet! Accusantium numquam repudiandae ratione quia consequuntur optio soluta.</p>
 				<br>
-				<button class="button_white">Más información</button>
+				<%= link_to "Más información", operacion_path, class: "button button_white" %>
 			</div>
 		</li>
 		</div>
@@ -42,5 +42,5 @@
 	<h2>¿Quieres conocernos mejor?</h2>
 	<hr class="blue">
 	<p>Nos gusta escuchar los comentarios de nuestros clientes, queremos hacer de esta experiencia única y nos gustaría saber qué opinas</p>
-	<button class="button_blue">Contáctanos</button>
+	<%= link_to "Contáctanos", new_contact_path, class: "button button_blue" %>
 </div>

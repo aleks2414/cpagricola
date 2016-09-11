@@ -270,8 +270,8 @@ ul.topnav li.icon {display: none;}
 	text-align: left;
 	color: white;
 	text-transform: uppercase;
-	padding: 10vh 5vw 0 0;
-	font-size: 5rem;
+	padding: 10vh 10vw 0 0;
+	font-size: 4.5rem;
 	margin: 0px;
 	}
 	p {
@@ -524,4 +524,12 @@ label {
 	margin-top: 1rem;
 	color: #A9A9A9;
 	font-weight: 400;
+}
+
+@media (max-width: 800px)
+{
+
+#banner {
+background-attachment: unset;
+}
 }

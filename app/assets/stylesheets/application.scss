@@ -265,9 +265,9 @@ ul.topnav li.icon {display: none;}
 }
 
 #cover.index, #cover.productos, #cover.operacion, #cover.cover_contact {
-	padding: 10vh 5vw 0 5vw;
 	h1 {
 	text-align: left;
+	padding: 10vh 5vw 0 5vw;
 	color: white;
 	text-transform: uppercase;
 	padding: 10vh 10vw 0 0;
@@ -529,7 +529,7 @@ label {
 @media (max-width: 800px)
 {
 
-#banner {
+#cover {
 background-attachment: unset;
 }
 }

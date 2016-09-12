@@ -574,3 +574,27 @@ background-attachment: unset;
 		font-size: 2em;
 	}
 }
+
+#clientes {
+	margin-top: 2rem;
+	text-align: center;
+	h2 {
+		text-transform: uppercase;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline;
+			img {
+				width: 10%;
+			}
+		}
+	}
+}
+
+/*Clientes
+Algunos cliente con los que tenemos relaciones duraderas
+
+subway, burger king, macdonals, KFC, Mr lucky*/

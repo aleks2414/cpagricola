@@ -20,6 +20,7 @@
   </li>
   <li class="o"><%=link_to "Productos", productos_path %></li>
   <li class="o"><%=link_to "Operación", operacion_path %></li>
+  <li class="o"><%= link_to "Clientes", root_path(:anchor => "clientes") %></li>
   <li class="o"><%=link_to "Contacto", new_contact_path %></li>
   <li class="icon">
     <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
@@ -34,12 +35,13 @@
 	<ul>
 		<li><%=link_to "Productos", productos_path %></li>
 		<li><%=link_to "Operación", operacion_path %></li>
+    <li><%= link_to "Clientes", root_path(:anchor => "clientes") %></li>
 		<li><%=link_to "Contacto", new_contact_path %></li>
-		<li>
+		<!-- <li>
 			<a href=""><span class="fa fa-twitter twitter" aria-hidden="true"></span></a>
 		<a href=""><span class="fa fa-facebook-official face" aria-hidden="true"></span></a>
 		<a href=""><span class="fa fa-youtube-square you" aria-hidden="true"></span></a>
-		</li>
+		</li> -->
 		<li class="float_right"><h4>© 2016 Control y Programación agrícola v1.0.0</h4></li>
 	</ul>
 </div>

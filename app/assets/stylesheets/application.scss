@@ -281,6 +281,10 @@ ul.topnav li.icon {display: none;}
 	}
 }
 
+.blue {
+	color: $blue;
+}
+
 #titulos{
 	text-align: center;
 	margin: 4rem 0;
@@ -438,6 +442,16 @@ ul.topnav li.icon {display: none;}
 	padding: 3rem;
 	text-align: center;
 }
+
+.romana {
+	background-image: image-url("romana.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+
 .blanca {
 	background-image: image-url("blanca.jpg");
 	background-repeat: no-repeat;
@@ -457,7 +471,17 @@ ul.topnav li.icon {display: none;}
 }
 
 .lechugas {
-	background-image: image-url("lechugas.jpg");
+	background-image: image-url("bola.jpg");
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+  background-color: #989898;
+	padding: 3rem;
+	text-align: center;
+}
+
+
+.coliflor {
+	background-image: image-url("coliflor.jpg");
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
   background-color: #989898;
@@ -480,6 +504,7 @@ ul.topnav li.icon {display: none;}
 		li {
 			display: inline;
 			margin-bottom: 2rem;
+			padding: 2rem;
 			img {
 				width: 50%;
 			}
@@ -535,4 +560,17 @@ label {
 #cover {
 background-attachment: unset;
 }
+}
+
+#opciones {
+	text-align: center;
+	li {
+		display: inline;
+		margin-right: 3rem;
+		font-size: 1.2em;
+	}
+	span {
+		color: $blue;
+		font-size: 2em;
+	}
 }

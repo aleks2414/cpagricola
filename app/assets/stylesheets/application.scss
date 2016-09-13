@@ -346,6 +346,7 @@ ul.topnav li.icon {display: none;}
 .izq {
 	background-image: image-url("lechuga.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-blend-mode: multiply;
   background-color: #989898;
 	padding: 3rem;
@@ -355,6 +356,7 @@ ul.topnav li.icon {display: none;}
 .der {
 	background-image: image-url("ope.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-blend-mode: multiply;
   background-color: #989898;
 	padding: 3rem;
